@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="" name="discription">
+  <meta content="" name="keywords">
+  <link href="assets/images//favicon.png" rel="icon">
+  <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/scss/custom.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/scroll.css">
+
+  <title>English Oven</title>
+</head>
+
+<body class="main-contaner">
+  <div class="sub-container" style="overflow: hidden;">
+    <header class="header-box d-flex">
+      <div class="w-100">
+        <div class="other_site_container display-small"><a class="other_site_link" href="#!">Visit Corporate website
+          </a><span class="mx-2">|</span> <a class="other_site_link" href="#!">Visit cremica website</a></div>
+        <div class="d-flex align-items-center padding_24 small-height-60">
+          <div class="brand-log"><a data-async href="index.html"><img class="lozad" data-src="assets/images/logo.png"
+                alt=""></a></div>
+          <div class="home-icon"><a data-async href="index.html"><img class="lozad"
+                data-src="assets/images/home-icon.png" alt=""></a></div>
+          <div class="menu"><a onclick="toggleNav()"><button class="menu toogle-icon"><svg viewBox="0 0 64 48">
+                  <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                  <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                  <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                </svg></button><span class="text-menu">MENU</span></a></div>
+          <div class="video-icon" id="video-container"><a href="#"><img
+                data-src="assets/images/icons/tv.png" alt="" class="youtube lozad" ytSrc="2giJeVLouOM"></a></div>
+        </div>
+      </div>
+    </header>
+    <div class="recipes-page recipes-page-new overflow-hidden">
+      <div class="row g-0 h-100">
+        <div class="col-md-7 col-12 lft-rgt-sec">
+          <div class="lftSec"><img data-src="assets/images/our-recipes/bg.jpg" class="display-big lozad"
+              style="height: 100vh;" alt="">
+            <div class="txt">
+              <div class="fade-effects">
+                <div class="center">
+                  <div class="title">
+                    <p class="one">OUR </p>
+                    <p class="two">Recipes</p>
+                  </div>
+                  <p class="cursive">Food for every mood. what are you craving for?</p>
+                  <div class="img-container">
+                    <div class="recipes-one-fork"><img data-src="assets/images/recipies-three.png" alt=""
+                        class="img-fluid lozad"></div>
+                    <div class="recipes-one-dish"><img data-src="assets/images/recipies-tow.png" alt=""
+                        class="img-fluid lozad"></div>
+                    <div class="recipes-one-knife"><img data-src="assets/images/recipies-one.png" alt=""
+                        class="img-fluid lozad"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-12 info">
+          <a href="index.html" data-async="" class="close-btn recipe-close position-absolute display-big-flex"><img src="assets/images/close.png" alt=""></a>
+          <div class="info-container">
+            <div class="h-100">
+              <div class="top-item-row"> 
+                <a class="navigation-arrow" onclick="scrollbtn('pills-tab','left')"><img src="assets/images/icons/arrow_left.png" alt="" srcset=""></a>
+                <ul class="nav nav-pills justify-content-start story-nav " id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation"><button
+                      class="btn show-all fiter-btn-recipie active-filter">All</button></li>
+                  <li class="nav-item" role="presentation"><button
+                      class="btn breakfast fiter-btn-recipie">Breakfast</button></li>
+                  <li class="nav-item" role="presentation"><button class="btn lunch fiter-btn-recipie">Lunch</button></li>
+                  <li class="nav-item" role="presentation"><button class="btn dinner fiter-btn-recipie">Dinner</button> </li>
+                  <li class="nav-item" role="presentation"><button class="btn dinner fiter-btn-recipie">Dinner</button> </li>
+                  <li class="nav-item" role="presentation"><button class="btn dinner fiter-btn-recipie">Dinner</button> </li>
+                  <li class="nav-item" role="presentation"><button class="btn dinner fiter-btn-recipie">Dinner</button> </li>
+                  <li class="nav-item" role="presentation"><button class="btn dinner fiter-btn-recipie">Dinner</button> </li>
+                  <li class="nav-item" role="presentation"><button class="btn dinner fiter-btn-recipie">Dinner</button> </li>
+                  <li class="nav-item" role="presentation"><button class="btn dinner fiter-btn-recipie">Dinner</button> </li>
+                  <li class="nav-item" role="presentation"><button class="btn dinner fiter-btn-recipie">Dinner</button> </li>
+                  <li class="nav-item" role="presentation"><button class="btn dinner fiter-btn-recipie">Dinner</button> </li>
+                  <li class="nav-item" role="presentation"><button class="btn dinner fiter-btn-recipie">Dinner</button> </li>
+                  <li class="nav-item" role="presentation"><button class="btn dinner fiter-btn-recipie">Dinner</button> </li>
+                  
+                </ul>
+                <a class="navigation-arrow" onclick="scrollbtn('pills-tab','right')"><img src="assets/images/icons/arrow_right.png" alt="" srcset=""></a>
+              </div>
+              <div class="height-80-container swipper-height-80 ">
+                <div class="swiper-container our-recipes-swiper our-recipies-page-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide filtered-div" data-lunch="lunch"><a href="recipes-individual.html"
+                        class="text-decoration-none">
+                        <div class="indiRecipe ">
+                          <div class="our-rec-img-container">
+                            <div class="time"><img src="assets/images/timer.png" alt=""><span>30 Mins</span></div>
+                            <div class="veg-icon-rec"><img src="assets/images/icons/veg.jpg" alt=""></div><img
+                              class="poster-img lozad" data-src="assets/images/our-recipes/recipe-1.jpg">
+                          </div>
+                          <h4>Grilled Mexican Spiced Paneer</h4>
+                          <p class="sml"><span>Lunch </span> | 564 Cal</p>
+                        </div>
+                      </a></div>
+                    <div class="swiper-slide filtered-div" data-dinner="dinner"><a href="recipes-individual.html"
+                        class="text-decoration-none">
+                        <div class="indiRecipe">
+                          <div class="our-rec-img-container">
+                            <div class="time"><img src="assets/images/timer.png" alt=""><span>30 Mins</span></div>
+                            <div class="veg-icon-rec"><img src="assets/images/icons/veg.jpg" alt=""></div><img
+                              class="poster-img lozad" data-src="assets/images/our-recipes/recipe-2.jpg">
+                          </div>
+                          <h4>Crumb Fried Chicken</h4>
+                          <p class="sml"><span>Dinner </span> | 256 Cal</p>
+                        </div>
+                      </a></div>
+                    <div class="swiper-slide filtered-div" data-breakfast="breakfast">
+                      <div class="indiRecipe">
+                        <div class="our-rec-img-container">
+                          <div class="time"><img src="assets/images/timer.png" alt=""><span>30 Mins</span></div>
+                          <div class="veg-icon-rec"><img src="assets/images/icons/veg.jpg" alt=""></div><img
+                            class="poster-img lozad" data-src="assets/images/our-recipes/recipe-3.jpg">
+                        </div>
+                        <h4>Crumb Fried Chicken</h4>
+                        <p class="sml"><span>breakfast </span> | 256 Cal</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide filtered-div" data-lunch="lunch">
+                      <div class="indiRecipe">
+                        <div class="our-rec-img-container">
+                          <div class="time"><img src="assets/images/timer.png" alt=""><span>30 Mins</span></div>
+                          <div class="veg-icon-rec"><img src="assets/images/icons/veg.jpg" alt=""></div><img
+                            class="poster-img lozad" data-src="assets/images/our-recipes/recipe-4.jpg">
+                        </div>
+                        <h4>Grilled Mexican Spiced Paneer</h4>
+                        <p class="sml"><span>Lunch </span>| 564 Cal</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide filtered-div" data-lunch="lunch">
+                      <div class="indiRecipe">
+                        <div class="our-rec-img-container">
+                          <div class="time"><img src="assets/images/timer.png" alt=""><span>30 Mins</span></div>
+                          <div class="veg-icon-rec"><img src="assets/images/icons/veg.jpg" alt=""></div><img
+                            class="poster-img lozad" data-src="assets/images/our-recipes/recipe-5.jpg">
+                        </div>
+                        <h4>Grilled Mexican Spiced Paneer</h4>
+                        <p class="sml"><span>Lunch</span>| 564 Cal</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide filtered-div" data-lunch="lunch">
+                      <div class="indiRecipe">
+                        <div class="our-rec-img-container">
+                          <div class="time"><img src="assets/images/timer.png" alt=""><span>30 Mins</span></div>
+                          <div class="veg-icon-rec"><img src="assets/images/icons/veg.jpg" alt=""></div><img
+                            class="poster-img lozad" data-src="assets/images/our-recipes/recipe-6.jpg">
+                        </div>
+                        <h4>Grilled Mexican Spiced Paneer</h4>
+                        <p class="sml"><span>Lunch</span>| 564 Cal</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide filtered-div" data-dinner="dinner">
+                      <div class="indiRecipe">
+                        <div class="our-rec-img-container">
+                          <div class="time"><img src="assets/images/timer.png" alt=""><span>30 Mins</span></div>
+                          <div class="veg-icon-rec"><img src="assets/images/icons/veg.jpg" alt=""></div><img
+                            class="poster-img lozad" data-src="assets/images/our-recipes/recipe-2.jpg">
+                        </div>
+                        <h4>Grilled Mexican Spiced Paneer</h4>
+                        <p class="sml"><span>dinner</span>| 564 Cal</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide filtered-div" data-breakfast="breakfast">
+                      <div class="indiRecipe ">
+                        <div class="our-rec-img-container">
+                          <div class="time"><img src="assets/images/timer.png" alt=""><span>30 Mins</span></div>
+                          <div class="veg-icon-rec"><img src="assets/images/icons/veg.jpg" alt=""></div><img
+                            class="poster-img lozad" data-src="assets/images/our-recipes/recipe-1.jpg">
+                        </div>
+                        <h4>Grilled Mexican Spiced Paneer</h4>
+                        <p class="sml"><span>breakfast</span>| 564 Cal</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar recipies-sroll" id="style-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="newsListWrapper display-small" style="margin-top: 110px;">
+    <div class="container ">
+      <div class="d-flex justify-content-center align-items-center flex-wrap other-link">
+        <div class="flex-item"><a href="javascript:void()">Manufacturing Unit </a></div>
+        <div class="flex-item"><a href="javascript:void()">Where to Buy </a></div>
+        <div class="flex-item"><a href="javascript:void()">Customer Support </a></div>
+        <div class="flex-item"><a href="javascript:void()">Contact Us </a></div>
+        <div class="flex-item"><a href="javascript:void()">Careers </a></div>
+        <div class="flex-item"><a href="javascript:void()">Privacy Policy </a></div>
+        <div class="flex-item"><a href="javascript:void()">HR policy </a></div>
+        <div class="flex-item"><a href="javascript:void()">Disclaimer </a></div>
+        <div class="flex-item"><a href="javascript:void()">Toll Free Number : 1800-102-9163 </a></div>
+      </div>
+      <div class="copyright text-center">&copy;
+        <script>document.write(new Date().getFullYear())</script>English Oven<sup>TM</sup>&nbsp;&nbsp; India. All Rights Reserved
+      </div>
+      <div class="d-flex justify-content-center align-items-center flex-wrap">
+        <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+              src="assets/images/social/linkedin.png" alt=""></a></div>
+        <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+              src="assets/images/social/facebook.png" alt=""></a></div>
+        <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+              src="assets/images/social/youtube.png" alt=""></a></div>
+        <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+              src="assets/images/social/insta.png" alt=""></a></div>
+      </div>
+      <img data-src="assets/images/testhappy.png" alt="testhappy" class="lozad mx-auto img-fluid d-block mt-2">
+    </div>
+  </section>
+  <div class="maga-menu-full">
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <div class="d-flex link-container animate__animated ">
+          <div class="link-item"><a data-async href="about.html">
+              <div class="header">OUR </div>
+              <div class="title">STORY</div>
+            </a></div>
+          <div class="link-item"><a data-async href="products.html">
+              <div class="header">OUR </div>
+              <div class="title">PRODUCTS</div>
+            </a></div>
+          <div class="link-item"><a data-async href="recipes.html">
+              <div class="header">OUR </div>
+              <div class="title">RECIPES</div>
+            </a></div>
+          <div class="link-item"><a data-async href="social.html">
+              <div class="header">Social </div>
+              <div class="title">MEDIA</div>
+            </a></div>
+          <div class="link-item"><a data-async href="get-in-touch.html">
+              <div class="header">GET IN</div>
+              <div class="title">TOUCH</div>
+            </a></div>
+        </div>
+        <div class="px-4 footer-linkes text-left">
+          <div class="row g-0">
+            <div class="col-12 col-md-10">
+          <div class="d-flex align-items-center flex-wrap other-link other-link-small">
+            <div class="flex-item"><a data-async href="maunfacturing-unit.html">Manufacturing Unit </a></div>
+            <div class="flex-item"><a href="where-to-buy.html">Where to Buy </a></div>
+            <div class="flex-item"><a href="#!">Customer Support</a></div>
+            <div class="flex-item"><a href="get-in-touch.html">Contact Us </a></div>
+            <div class="flex-item"><a href="careers.html">Careers </a></div>
+            <div class="flex-item"><a href="privacy-policy.html">Privacy Policy </a></div>
+            <div class="flex-item"><a href="hr-policies.html">HR policy </a></div>
+            <div class="flex-item"><a href="disclaimer.html">Disclaimer </a></div>
+            <div class="flex-item"><a href="tel:18001029163">Toll Free Number : 1800-102-9163 </a></div>
+          </div>
+          <div class="copyright copyright-small">&copy;
+            MRS BECTORS FOOD SPECIALITIES LTD.&nbsp;&nbsp;India. All Rights
+            Reserved 
+           <br>  L74899PB1995PLC033417
+          </div>
+          <div class="d-flex footer-social-icon">
+            <div class="flex-item"><a class="menu-social-icon" href="#!"><img
+                  data-src="assets/images/social/linkedin.png" class="lozad" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="https://www.facebook.com/mrsbectorsenglishoven/"><img
+                  data-src="assets/images/social/facebook.png" class="lozad" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="https://www.youtube.com/channel/UCNIOCYvHnsuTkIyxknbT4lw"><img
+                  data-src="assets/images/social/youtube.png" class="lozad" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="https://www.instagram.com/englishoven/"><img data-src="assets/images/social/insta.png"
+                  class="lozad" alt=""></a></div>
+          </div>
+        </div>
+          <div class="col-md-2 col-12 text-center">
+            <img data-src="assets/images/testhappy.png" alt="" class="lozad img-fluid my-3 my-md-0">
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="preloader" class="init-loader">
+    <p>Find section of</p><img class="lozad" id="loadingimg" data-src="assets/images/loading_img.png"
+      data-srcset="assets/images/loading_img.png 1000w, assets/images/loading_img.png 2000w" alt="">
+    <h2 id="typewriter"></h2>
+  </div>
+  <div class="loader-img-container"><img class="lozad image_visible" id="loadingimg" data-src="assets/images/loading_img.png"
+      data-srcset="assets/images/loading_img.png 1000w, assets/images/loading_img.png 2000w" alt=""></div>
+  <script src="assets/vendor/js/jquery.js"></script>
+  <script src="assets/vendor/js/lozad.min.js"></script>
+  <script src="assets/vendor/js/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/js/mousewhel.js"></script>
+  <script src="assets/vendor/js/BigPicture.js"></script>
+
+  <script src="js/main-min.js"></script>
+  <!--<script src="js/mousewhel.js"></script>
+  <script src="js/homepage.js"></script> -->
+  <script type="text/javascript">
+    // Initialize Swiper
+    var recipiesSwiperNew = new Swiper('.our-recipies-page-swiper', {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      slidesPerColumn: 2,
+      slidesPerColumnFill: 'row',
+      direction: 'vertical',
+      autoHeight: true,
+      mousewheel: true,
+      calculateHeight:true,
+      
+      // observer:true,
+      // observeSlideChildren:true,
+      // scrollbar: 0,
+
+      breakpoints: {
+        768: {
+            scrollbar: {
+          el: '.recipies-sroll',
+          draggable: true,
+        }
+        },
+      }
+      // effect:'coverflow',
+      // loop:true,
+      // autoplay:true,
+    });
+    function reinteSwiper(){
+      console.log("om ")
+      var recipiesSwiperNew = new Swiper('.our-recipies-page-swiper', {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      slidesPerColumn: 2,
+      slidesPerColumnFill: 'row',
+      direction: 'vertical',
+      autoHeight: true,
+      mousewheel: true,
+      observer:true,
+      observeParents: true,
+      calculateHeight:true,
+      breakpoints: {
+        768: {
+            scrollbar: {
+          el: '.recipies-sroll',
+          draggable: true,
+        }
+        },
+      }
+    });
+    }
+    const showAllTab = document.querySelector('.show-all')
+    const breakfastTab = document.querySelector('.breakfast')
+    const lunchTab = document.querySelector('.lunch')
+    const dinnerTab = document.querySelector('.dinner')
+
+    const allFilteredDivs = document.querySelectorAll('.filtered-div')
+
+    // Turns node list into an array
+    const allFilteredDivsArray = Array.from(allFilteredDivs)
+
+    showAllTab.addEventListener('click', showAll)
+    function showAll() {
+      allFilteredDivsArray.forEach(div => {
+        div.classList.remove('remove')
+        div.classList.add('show')
+      })
+    //   recipiesSwiperNew.destroy() 
+    //   recipiesSwiperNew = new Swiper('.our-recipies-page-swiper', {
+    //   slidesPerView: 3,
+    //   slidesPerGroup: 3,
+    //   slidesPerColumn: 2,
+    //   slidesPerColumnFill: 'row',
+    //   direction: 'vertical',
+    //   autoHeight: true,
+    //   mousewheel: true,
+    //   autoHeight:true,
+    //   calculateHeight:true,
+    //   breakpoints: {
+    //     768: {
+    //         scrollbar: {
+    //       el: '.recipies-sroll',
+    //       draggable: true,
+    //     }
+    //     },
+    //   }
+    // });
+    }
+
+    breakfastTab.addEventListener('click', showBreakfast)
+    // console.log("Reinit")
+    // recipiesSwiperNew.init();  
+    // recipiesSwiperNew.updateSlides() 
+    function showBreakfast() {
+      console.log("Reinit")
+      // recipiesSwiperNew.scrollbar.destroy()
+      // recipiesSwiperNew.updateSlides() 
+      // recipiesSwiperNew.destroy();
+      // reinteSwiper()
+      allFilteredDivsArray.forEach(div => {
+        div.classList.remove('remove')
+
+        if (!div.dataset.breakfast) {
+          div.classList.add('remove')
+        }
+
+      })
+    //   recipiesSwiperNew.destroy() 
+    //   recipiesSwiperNew = new Swiper('.our-recipies-page-swiper', {
+    //   slidesPerView: 3,
+    //   slidesPerGroup: 3,
+    //   slidesPerColumn: 2,
+    //   slidesPerColumnFill: 'row',
+    //   direction: 'vertical',
+    //   autoHeight: true,
+    //   mousewheel: true,
+    //   autoHeight:true,
+    //   calculateHeight:true,
+    //   breakpoints: {
+    //     768: {
+    //         scrollbar: {
+    //       el: '.recipies-sroll',
+    //       draggable: true,
+    //     }
+    //     },
+    //   }
+    // });
+    // recipiesSwiperNew.update() 
+    //   recipiesSwiperNew.updateSlides() 
+    }
+
+    lunchTab.addEventListener('click', showLunch)
+    function showLunch() {
+      allFilteredDivsArray.forEach(div => {
+        div.classList.remove('remove')
+
+        if (!div.dataset.lunch) {
+          div.classList.add('remove')
+        }
+
+      })
+    }
+
+    dinnerTab.addEventListener('click', showDinner)
+    function showDinner() {
+      allFilteredDivsArray.forEach(div => {
+        div.classList.remove('remove')
+
+        if (!div.dataset.dinner) {
+          div.classList.add('remove')
+        }
+
+      })
+    }
+    //END TAB FILTERS
+    $(".recipes-page").css("top", $(".header-box").outerHeight());
+    if ($( document ).width()<768) {
+      recipiesSwiperNew.destroy();
+    }
+
+    // click for btn
+    $('.fiter-btn-recipie').click(function () {
+      $('.story-nav').find('.fiter-btn-recipie').removeClass('active-filter')
+      $(this).addClass('active-filter')
+    })
+  </script>
+  <script>
+    function sideScroll(element,direction,step){
+      if(direction == 'left'){
+          element.scrollLeft -= step;
+      } else {
+          element.scrollLeft += step;
+      }
+    }
+    function scrollbtn(id, direction){
+      var container = document.getElementById(id);
+      sideScroll(container,direction,100);
+    }
+  
+  </script>
+</body>
+
+</html>

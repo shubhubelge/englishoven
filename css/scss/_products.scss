@@ -1,0 +1,636 @@
+.page-info {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: flex;
+  .our-text {
+    font-size: 120px;
+    line-height: 32px;
+    color: #ffffff3d;
+    font-weight: 100;
+    font-family: "Barlow Condensed";
+    text-align: center;
+    margin-top: 72px;
+    text-transform: uppercase;
+  }
+  .title {
+    font-size: 60px;
+    line-height: 50px;
+    color: #eb7203;
+    font-weight: 700;
+    font-family: "Barlow Condensed";
+    text-align: center;
+    text-transform: uppercase;
+    // &:hover {
+    //   text-shadow: 0 0 12px rgba(255, 255, 255, 0.83);
+    // }
+  }
+  .subtitle {
+    font-size: 30px;
+    margin-top: 24px;
+    line-height: 34px;
+    color: #ffffff;
+    font-family: "CastroScript_PERSONAL_USE_ONLY";
+    text-align: center;
+  }
+  .product-img-container {
+    .section_two_two,
+    .section_two_one {
+      width: 240px;
+      display: block;
+      -webkit-animation-name: slideInDown;
+      animation-name: slideInDown;
+      animation-duration: 1s;
+      &:hover {
+        transform: scale(1.2);
+        transition: 1s;
+      }
+    }
+    .section_two_one {
+      animation-duration: 2s;
+      margin-bottom: -48px;
+      transform: scale(1);
+      z-index: 2;
+      &:hover {
+        transform: scale(1.2);
+        transition: 1s;
+      }
+    }
+  }
+}
+.flage-container {
+  height: 36px;
+  background-color: #f9e8dc;
+  display: flex;
+  padding-left: 12px;
+  position: relative;
+  margin-right: -8px;
+  align-items: center;
+  text-align: right;
+  span {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 12px;
+    color: #707070;
+    font-family: "Arial";
+    text-align: center;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-top: 20px solid #f9e8dc;
+  }
+  &::after {
+    top: auto;
+    bottom: 0;
+    border-top: none;
+    border-bottom: 20px solid #f9e8dc;
+  }
+}
+.accordion-button:focus,
+.btn-check:focus + .btn,
+.btn:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+.products-container {
+  .row {
+    height: 100%;
+  }
+  .product-l-bg {
+    background-image: url("../../assets/images/product_back.jpg");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  height: 100vh;
+  .product-acc {
+    background-color: #f9f9f9;
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.05));
+    height: 100%;
+    overflow-y: auto;
+    padding: 36px 48px;
+    overflow-x: hidden;
+    .accordion-item {
+      border-bottom: 1px solid #ededed;
+      background-color: transparent;
+
+    }
+    .accordion-flush .accordion-item .accordion-button {
+      border-top-width: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      background: transparent;
+      color: #212121;
+      border: none;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000000;
+      font-weight: 400;
+      font-family: "Unica One";
+      text-align: left;
+      text-transform: uppercase;
+      &:hover,
+      &:not(.collapsed) {
+        color: #eb7203;
+      }
+    }
+    .accordion-button::after {
+      background-image: url("../../assets/images/down-acc.png");
+      background-size: 8px 6px;
+      transition: 0.5s;
+      transform-origin: center center;
+      width: 10px;
+      background-position: center center;
+    }
+    .accordion-button:not(.collapsed)::after {
+      background-image: url("../../assets/images/right-acc.png");
+      transform: rotate(0);
+      background-size: 6px 8px;
+      transform: rotate(360deg);
+      transform-origin: center center;
+      transition: 0.5s;
+      width: 7px;
+      height: 10px;
+      background-position: center center;
+    }
+    .accordion-btn {
+      color: #fff;
+      padding: 12px 0;
+    }
+  }
+  .product-name {
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Unica One";
+    text-align: left;
+    text-transform: uppercase;
+    &:hover,
+    .active {
+      color: #eb7203;
+    }
+  }
+  .info {
+    height: 100%;
+    overflow-y: auto;
+    .productImg {
+      height: 200px;
+      z-index: 1;
+      display: block;
+      margin: 0 auto;
+      width: auto;
+    }
+    .productName {
+      margin-top: 48px;
+      font-size: 30px;
+      line-height: 50px;
+      color: #000000;
+      font-weight: 700;
+      text-align: center;
+      font-family: "Barlow Condensed";
+    }
+    .productDisp {
+      font-size: 12px;
+      line-height: 20px;
+      color: #000000;
+      font-family: "Arial";
+      text-align: center;
+    }
+  }
+  .product-image {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .products-tab {
+    padding-top: 32px;
+    .pro-nav {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      font-family: "Unica One";
+      position: sticky;
+      top: 0;
+      left: 0;
+      padding: 32px 32px 32px 16px;
+      background-color: #fff;
+      z-index: 2;
+    }
+    .product-info-tab {
+      padding: 0 64px;
+    }
+  }
+  .nav-link {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Unica One";
+    background-color: transparent;
+    text-transform: uppercase;
+  }
+  .nav-item {
+    padding: 0 16px 0 0;
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: #eb7203;
+    background-color: transparent;
+    border-bottom: 1px solid #eb7203;
+    border-radius: 0;
+  }
+  .healthy {
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(112, 112, 112);
+    line-height: 1.667;
+    margin-bottom: 18px;
+  }
+  .other-pro-card {
+    background-color: #fafafa;
+    border-radius: 2px;
+    padding: 28px;
+    margin-bottom: 16px;
+    .prod-img-cont {
+      height: 80px;
+      text-align: center;
+      .pro-card-img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .content {
+      padding-left: 18px;
+    }
+    h2 {
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+      font-weight: 400;
+      font-family: "Unica One";
+      text-align: left;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 12px;
+      line-height: 20px;
+      color: #707070;
+      font-family: "Arial";
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+    }
+    .prod-link-cont {
+      align-items: center;
+    }
+    .pro-card-link {
+      font-size: 14px;
+      color: #eb7203;
+      font-weight: 400;
+      font-family: "Unica One";
+      text-transform: uppercase;
+    }
+  }
+}
+.close-btn {
+  top: 24px;
+  right: 24px;
+  width: 30px;
+  height: 30px;
+  z-index: 3;
+  border-radius: 50px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    border: 3px solid#cbcbcb;
+    transition: 0.5s;
+  }
+}
+.accordion-collapse {
+  border: solid transparent;
+  border-width: 0;
+}
+.place-holder-img {
+  background-image: url("../../assets/images/placeholder.jpg");
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding: 0 64px;
+  display: flex;
+  text-align: center;
+  .title {
+    font-size: 60px;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Barlow Condensed";
+    text-align: center;
+  }
+  p {
+    font-size: 30px;
+    line-height: 34px;
+    color: #ffffff;
+    font-family: "CastroScript_PERSONAL_USE_ONLY";
+    text-align: center;
+  }
+  .text {
+    color: #fff;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  button {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Unica One";
+    border-radius: 2px;
+    background-color: #eb7203;
+  }
+}
+.dymaic-container {
+  display: flex;
+  padding: 64px 0;
+  .pro-price-container {
+    padding: 18px 0;
+    margin-top: 24px;
+    border-bottom: 1px solid rgb(112, 112, 112);
+    border-top: 1px solid rgb(112, 112, 112);
+    justify-content: space-between;
+    align-items: center;
+    .avai-gra {
+      border: 2px solid #000;
+      font-size: 14px;
+      color: #000000;
+      font-weight: 400;
+      font-family: "Unica One";
+      min-width: 100px;
+      text-transform: uppercase;
+      option{
+        text-transform: uppercase;
+      }
+    }
+    .rs {
+      height: 40px;
+      line-height: 40px;
+      border-radius: 4px;
+      background-color: #eb7103;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      text-align: center;
+      font-weight: 600;
+      margin-left: 8px;
+      padding: 0 24px;
+    }
+    .location {
+      text-align: right;
+      position: relative;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+      a {
+        text-align: right;
+        font-size: 14px;
+        color: #000000;
+        font-weight: 400;
+        font-family: "Unica One";
+        text-transform: uppercase;
+      }
+    }
+    
+    .location-popup{
+      position: absolute;
+      right: 82%;
+      top: -66px;
+      border-radius: 2px;
+      background-color: rgb(255, 255, 255);
+      width: 340px;
+      height: auto;
+      box-shadow: 0px 0px 40px 0px rgba(73, 101, 127, 0.1);
+      padding: 40px;
+      z-index: 9;
+      display: none;
+      .location-title{
+        font-size: 18px;
+        font-family: "Unica One";
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        text-align: left;
+      }
+      .close-location-btn{
+        position: absolute;
+        right: 24px;
+        top: 32px;
+        width: 40px;
+        height: 40px;
+        text-decoration: none;
+        color: #eb7203;
+        font-size: 48px;
+        line-height: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: 0.5s;
+        &:hover{
+          border: 3px solid #ccc;
+        }
+      }
+      .loaction-state{
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        padding: 48px 0 24px 0;
+        .state{
+          width: 50%;
+          display: block;
+          padding-right: 8px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 14px;
+          font-family: "Unica One";
+          color: rgb(0, 0, 0);
+          text-transform: uppercase;
+          text-align: left;
+        }
+      }
+    }
+    .display-location{
+      -webkit-animation-name: zoomIn;
+      animation-name: zoomIn;
+      animation-duration: 1s;
+      display: block !important;
+    }
+    .hide-location{
+      -webkit-animation-name: zoomOut;
+      animation-name: zoomOut;
+      animation-duration: 1s;
+    }
+    
+  }
+}
+.product-container-gallery {
+  display: none;
+}
+.dynProImgs {
+  .swiper-pagination {
+    bottom: 0;
+    z-index: 6;
+    transform: scale(1);
+    .swiper-pagination-bullet-active {
+      background: $colorActive;
+    }
+  }
+}
+.dynProImgsCarousel {
+  .owl-dots {
+    .owl-dot {
+      border: none;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      width: 15px;
+      span {
+        width: 6px;
+        height: 6px;
+        background-color: #707070;
+        margin: 5px 2px;
+      }
+      &.active span {
+        background-color: #eb7203;
+      }
+    }
+  }
+}
+.nutritional{
+  width: 340px;
+  margin-top: 48px;
+  filter: drop-shadow(0 0 20px rgba(73,101,127,0.1));
+  .title-box{
+    text-align: center;
+    background-color: #222222;
+    padding: 18px;
+    .title, .subtitle{
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "Unica One";
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  ul{
+    padding: 20px;
+    background-color: #ffffff;
+
+    li{
+      font-size: 12px;
+      line-height: 24px;
+      color: #000000;
+      font-family: "Arial";
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 18px;
+      &:nth-child(odd){
+        background-color: #fafafa;
+      }
+    }
+  }
+}
+ @media ( max-width:767.98px) {
+  .nutritional{
+    width: 100%;
+    margin-top: 0;
+  }
+ }
+
+//  .zoomShow{z-index:9;-webkit-box-shadow:0 0 10px rgba(73,101,127,0.2);box-shadow:0 0 10px rgba(73,101,127,0.2)}
+//  #show-img{position:absolute;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%);left:50%;top:50%;width:100%;height:100%}
+
+
+//  *{
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box
+// }
+// .show{
+//   width: 400px;
+//   height: 400px;
+// }
+// #show-img { width: 400px; height: 400px; }
+// .small-img{
+//   width: 350px;
+//   height: 70px;
+//   margin-top: 10px;
+//   position: relative;
+//   left: 25px;
+// }
+// .small-img .icon-left, .small-img .icon-right{
+//   width: 12px;
+//   height: 24px;
+//   cursor: pointer;
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   margin: auto 0;
+// }
+// .small-img .icon-left{
+//   transform: rotate(180deg)
+// }
+// .small-img .icon-right{
+//   right: 0;
+// }
+// .small-img .icon-left:hover, .small-img .icon-right:hover{
+//   opacity: .5;
+// }
+// .small-container{
+//   width: 310px;
+//   height: 70px;
+//   overflow: hidden;
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   margin: 0 auto;
+// }
+// .small-container div{
+//   width: 800%;
+//   position: relative;
+// }
+
+// .small-container .show-small-img{
+//   width: 70px;
+//   height: 70px;
+//   margin-right: 6px;
+//   cursor: pointer;
+//   float: left;
+// }
+// .small-container .show-small-img:last-of-type{
+//   margin-right: 0;
+// }

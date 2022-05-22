@@ -1,0 +1,150 @@
+.storypage {
+  .row {
+    height: 100%;
+  }
+  .col-3 {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .col-5 {
+    height: 100%;
+    .story-tab {
+      padding: 24px 48px;
+      height: 100%;
+      position: relative;
+      .swiper-button-next,
+      .swiper-button-prev {
+        font-size: 14px;
+        line-height: 50px;
+        color: #000000;
+        font-weight: 400;
+        font-family: "Unica One";
+        text-transform: uppercase;
+        top: auto;
+        width: 100px;
+        bottom: 32px;
+        z-index: 8;
+        &::after {
+          display: none;
+        }
+      }
+      .swiper-button-next {
+        right: 30px;
+        text-align: right;
+      }
+      .swiper-button-prev {
+        left: 30px;
+        text-align: left;
+      }
+      .text-content {
+        padding-top: 48px;
+      }
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    .story-content {
+      height: 85%;
+      width: 100%;
+      overflow: scroll;
+      .title {
+        font-size: 30px;
+        line-height: 50px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Barlow Condensed";
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .sub-title {
+        font-size: 30px;
+        line-height: 34px;
+        color: #000000;
+        font-family: "CastroScript_PERSONAL_USE_ONLY";
+        text-align: center;
+      }
+      .qotes,
+      .para {
+        font-size: 12px;
+        line-height: 20px;
+        color: #000000;
+        font-weight: bold;
+        font-family: "Arial";
+        text-align: center;
+      }
+      .para {
+        color: #0000007e;
+      }
+      .story-video {
+        width: 100%;
+        cursor: pointer;
+      }
+      .discover-btn {
+        font-size: 14px;
+        margin-top: 40px;
+        line-height: 28px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Unica One";
+        border-radius: 2px;
+        background-color: #eb7203;
+        text-transform: uppercase;
+      }
+    }
+    .story-nav-bar {
+      height: auto;
+      box-sizing: border-box;
+      padding: 24px 0;
+      position: sticky;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .story-nav-bar .swiper-slide {
+      height: 100%;
+      width: auto;
+      font-size: 14px;
+      line-height: 18px;
+      cursor: pointer;
+      color: #000000;
+      font-weight: 400;
+      font-family: "Unica One";
+      text-transform: uppercase;
+    }
+    .story-nav-bar .swiper-slide-thumb-active {
+      color: #eb7203;
+      border-bottom: 1px solid #eb7203;
+    }
+    .close-btn {
+      color: #000;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      padding-bottom: 4px;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.disclaimer-page{
+  font-family: "Arial";
+  position: relative;
+  background-color: #212529;
+  a{
+    color: #eb7203;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .text{
+    padding: 60px 24px 0 24px;
+    margin-bottom: 200px;
+    position: relative;
+  }
+  .text h1 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000;
+    text-align: left;
+    margin: 0 0 10px;
+  }
+	.text h2 {
+	font-size: 24px;
+	line-height: 30px;
+		margin-top: 15px;
+}
+ol{
+  padding-left:18px;
+}
+  .text p, .text ul li, .text ul.descalimer-list li {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0;
+  }
+   table td{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .descalimer-list li:not(:last-child) {
+    margin-bottom: 25px;
+}
+}
+@media (max-width: 767.98px) {
+  .disclaimer-page{
+    background-color: transparent;
+    .text{
+      padding: 0 24px 0 24px;
+    }
+  }
+}

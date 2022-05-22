@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="" name="discription">
+  <meta content="" name="keywords">
+  <link href="assets/images//favicon.png" rel="icon">
+  <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/scss/custom.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>English Oven</title>
+</head>
+
+<body>
+  <!-- <iframe style="width: 100%;height: 100vh;" src="https://www.youtube.com/embed/2giJeVLouOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  <div>
+    <header class="header-box d-flex w-100 ">
+      <div class="w-100">
+        <div class="other_site_container"><a class="other_site_link" href="#">Visit Corporate website </a><span
+            class="mx-2">|</span> <a class="other_site_link" href="#">Visit cremica website</a></div>
+        <div class="d-flex align-items-center padding_24 small-height-60 align-items-center">
+          <div class="brand-log"><a data-async href="index.html"><img class="lozad" data-src="assets/images/logo.png"
+                alt=""></a></div>
+          <div class="home-icon"><a data-async href="index.html"><img class="lozad"
+                data-src="assets/images/home-icon.png" alt=""></a></div>
+          <div class="menu"><a onclick="toggleNav()"><button class="menu toogle-icon"><svg viewBox="0 0 64 48">
+                  <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                  <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                  <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                </svg></button><span class="text-menu">MENU</span></a></div>
+          <div class="video-icon" id="video-container"><img src="assets/images/icons/tv.png" alt="" class="youtube"
+              ytSrc="2giJeVLouOM"></div>
+        </div>
+      </div>
+    </header>
+    <div class="where-to-buy">
+      <section class="header-back">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="header-containt text-center">
+            <div class="text-overlap">
+              <h4>Where to Buy</h4>
+              <p>Keep up with your stock, find it near you.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="buy-logos text">
+        <div class="container">
+
+          <div class="row title-container">
+            <div class="col-md-4 col-12">
+            </div>
+            <div class="col-md-4 col-12 title">
+              <h2>E-COMMERCE</h2>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="mb-3">
+                <select class="form-select" onchange="moderntrade(this, 'commerce')"
+                  aria-label="Default select example">
+                  <option class="selected" value="0" selected>Select locations</option>
+                  <option value="delhi">DELHI NCR</option>
+                  <option value="mumbai">MUMBAI</option>
+                  <option value="banglore">BANGALORE</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="logos flex commerce border-bottom">
+            <div class="company-card">
+              <a href="https://www.amazon.in/English-Oven-Footlong-Parmesan-Oregano/dp/B08JHBXXJ6/ref=cm_cr_arp_d_product_top?ie=UTF8"
+                target="_blank" class="text-decoration-none">
+                <img src="assets/images/where-to-buy/amazon-fress.jpg" alt="">
+                <p>Amazon Fresh</p>
+              </a>
+              <div class="card-title d-none">mumbai delhi</div>
+
+            </div>
+            <div class="company-card">
+              <a href="https://play.google.com/store/apps/details?id=com.supr.suprdaily&hl=en_IN" target="_blank" class="text-decoration-none">
+                <img src="assets/images/where-to-buy/logo-e3.png" alt="">
+                <p>Supr Daily</p>
+              </a>
+              <div class="card-title d-none">mumbai delhi banglore</div>
+
+            </div>
+            <a href="#!" target="_blank" class="text-decoration-none">
+              <div class="company-card"> <img src="assets/images/where-to-buy/flipkart.jpg" alt="" >
+                <p>Flipkart</p>
+            </a>
+            <div class="card-title d-none">mumbai delhi</div>
+
+          </div>
+          <div class="company-card"><a href="https://www.bigbasket.com/pb/english-oven/breads-buns/" target="_blank" class="text-decoration-none"> <img
+                src="assets/images/where-to-buy/logo-e2.png" alt="">
+              <p>Big basket</p>
+            </a>
+            <div class="card-title d-none">delhi banglore</div>
+
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.milkbasket.app&hl=en_IN" target="_blank" class="text-decoration-none">
+            <div class="company-card"> <img src="assets/images/where-to-buy/logo-e4.jpg" alt="">
+              <p>Milk basket</p>
+          </a>
+          <div class="card-title d-none">delhi banglore</div>
+
+        </div>
+        <div class="company-card">
+          <a href="#!" target="_blank" class="text-decoration-none"> <img src="assets/images/where-to-buy/swiggy.jpg"
+              alt="">
+            <p>Swiggy</p>
+          </a>
+          <div class="card-title d-none">mumbai</div>
+
+        </div>
+    </div>
+
+    <div class="row title-container">
+      <div class="col-md-4 col-12">
+      </div>
+      <div class="col-md-4 col-12 title">
+        <h2>MODERN TRADE</h2>
+      </div>
+      <div class="col-md-4 col-12">
+        <div class="mb-3">
+          <select class="form-select" onchange="moderntrade(this, 'moderntrade')" aria-label="Default select example">
+            <option class="selected" value="0" selected>Select locations</option>
+            <option value="delhi">DELHI NCR</option>
+            <option value="mumbai">MUMBAI</option>
+            <option value="banglore">BANGALORE</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="logos flex moderntrade">
+      <div class="company-card"> <img src="assets/images/where-to-buy/logo-9.png" alt="">
+        <p class="brand-title" data-city="delhi">Easy Day</p>
+        <div class="card-title d-none">delhi</div>
+      </div>
+      <div class="company-card">
+        <img src="assets/images/where-to-buy/reliance-logo.jpg" alt="">
+        <p class="brand-title" data-city="mumbai">Reliance</p>
+        <div class="card-title d-none">delhi</div>
+      </div>
+      <div class="company-card">
+        <img src="assets/images/where-to-buy/logo-2.png" alt="">
+        <p>More Retail</p>
+        <div class="card-title d-none">delhi</div>
+      </div>
+      <div class="company-card"> <img src="assets/images/where-to-buy/logo-8.png" alt="">
+        <p>Big Bazaar</p>
+        <div class="card-title d-none">delhi mumbai</div>
+      </div>
+      <div class="company-card"> <img src="assets/images/where-to-buy/logo-3.png" alt="">
+        <p>Spencer</p>
+        <div class="card-title d-none">delhi mumbai</div>
+      </div>
+      <div class="company-card"> <img src="assets/images/where-to-buy/logo-6.png" alt="">
+        <p>Metro Cash N Carry</p>
+        <div class="card-title d-none">delhi mumbai banglore</div>
+      </div>
+      <div class="company-card"> <img src="assets/images/where-to-buy/Max.jpg" alt="">
+        <p>Max Hyper Market India Pvt Ltd</p>
+        <div class="card-title d-none">delhi banglore</div>
+      </div>
+      <div class="company-card"> <img src="assets/images/where-to-buy/logo-5.png" alt="">
+        <p>Walmart</p>
+        <div class="card-title d-none">delhi</div>
+      </div>
+      <div class="company-card"> <img src="assets/images/where-to-buy/fress.jpg" alt="">
+        <p>Fresh To Home</p>
+        <div class="card-title d-none">mumbai banglore</div>
+      </div>
+      <div class="company-card"> <img src="assets/images/where-to-buy/udaan.jpg" alt="">
+        <p>Udaan</p>
+        <div class="card-title d-none">banglore</div>
+      </div>
+    </div>
+
+  </div>
+  </section>
+  <section class="newsListWrapper d-block">
+    <div class="container-fluid px-4 py-5">
+      <div class="row">
+        <div class="col-12 col-md-10">
+      <div class="d-flex align-items-center flex-wrap other-link">
+        <div class="flex-item"><a href="javascript:void()">Manufacturing Unit </a></div>
+        <div class="flex-item"><a href="javascript:void()">Where to Buy </a></div>
+        <div class="flex-item"><a href="javascript:void()">Customer Support </a></div>
+        <div class="flex-item"><a href="javascript:void()">Contact Us </a></div>
+        <div class="flex-item"><a href="javascript:void()">Careers </a></div>
+        <div class="flex-item"><a href="javascript:void()">Privacy Policy </a></div>
+        <div class="flex-item"><a href="javascript:void()">HR policy </a></div>
+        <div class="flex-item"><a href="javascript:void()">Disclaimer </a></div>
+        <div class="flex-item"><a href="javascript:void()">Toll Free Number : 1800-102-9163 </a></div>
+      </div>
+      <div class="copyright">&copy;
+        <script>document.write(new Date().getFullYear())</script>English Oven<sup>TM</sup>&nbsp;&nbsp; India. All Rights Reserved<br>  L74899PB1995PLC033417
+      </div>
+      <div class="d-flex align-items-center flex-wrap social-center-small">
+        <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+              src="assets/images/social/linkedin.png" alt=""></a></div>
+        <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+              src="assets/images/social/facebook.png" alt=""></a></div>
+        <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+              src="assets/images/social/youtube.png" alt=""></a></div>
+        <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+              src="assets/images/social/insta.png" alt=""></a></div>
+      </div>
+    </div>
+    <div class="col-12 col-md-2 text-center">
+      <img data-src="assets/images/testhappy.png" alt="" class="lozad img-fluid " >
+    </div>
+  </div>
+    </div>
+  </section>
+  </div>
+  </div>
+  <div class="maga-menu-full">
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <div class="d-flex link-container animate__animated ">
+          <div class="link-item"><a data-async href="about.html">
+              <div class="header">OUR </div>
+              <div class="title">STORY</div>
+            </a></div>
+          <div class="link-item"><a data-async href="products.html">
+              <div class="header">OUR </div>
+              <div class="title">PRODUCTS</div>
+            </a></div>
+          <div class="link-item"><a data-async href="recipes.html">
+              <div class="header">OUR </div>
+              <div class="title">RECIPES</div>
+            </a></div>
+          <div class="link-item"><a data-async href="social.html">
+              <div class="header">Social </div>
+              <div class="title">MEDIA</div>
+            </a></div>
+          <div class="link-item"><a data-async href="get-in-touch.html">
+              <div class="header">GET IN</div>
+              <div class="title">TOUCH</div>
+            </a></div>
+        </div>
+        <div class="px-4 footer-linkes text-left">
+          <div class="row g-0">
+            <div class="col-12 col-md-10">
+          <div class="d-flex align-items-center flex-wrap other-link other-link-small">
+            <div class="flex-item"><a data-async href="maunfacturing-unit.html">Manufacturing Unit </a></div>
+            <div class="flex-item"><a href="where-to-buy.html">Where to Buy </a></div>
+            <div class="flex-item"><a href="#!">Customer Support</a></div>
+            <div class="flex-item"><a href="get-in-touch.html">Contact Us </a></div>
+            <div class="flex-item"><a href="careers.html">Careers </a></div>
+            <div class="flex-item"><a href="privacy-policy.html">Privacy Policy </a></div>
+            <div class="flex-item"><a href="hr-policies.html">HR policy </a></div>
+            <div class="flex-item"><a href="disclaimer.html">Disclaimer </a></div>
+            <div class="flex-item"><a href="tel:18001029163">Toll Free Number : 1800-102-9163 </a></div>
+          </div>
+          <div class="copyright copyright-small">&copy;
+            MRS BECTORS FOOD SPECIALITIES LTD.&nbsp;&nbsp;India. All Rights
+            Reserved 
+           <br>  L74899PB1995PLC033417
+          </div>
+          <div class="d-flex footer-social-icon">
+            <div class="flex-item"><a class="menu-social-icon" href="#!"><img
+                  data-src="assets/images/social/linkedin.png" class="lozad" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="https://www.facebook.com/mrsbectorsenglishoven/"><img
+                  data-src="assets/images/social/facebook.png" class="lozad" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="https://www.youtube.com/channel/UCNIOCYvHnsuTkIyxknbT4lw"><img
+                  data-src="assets/images/social/youtube.png" class="lozad" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="https://www.instagram.com/englishoven/"><img data-src="assets/images/social/insta.png"
+                  class="lozad" alt=""></a></div>
+          </div>
+        </div>
+          <div class="col-md-2 col-12 text-center">
+            <img data-src="assets/images/testhappy.png" alt="" class="lozad img-fluid my-3 my-md-0">
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="preloader" class="init-loader">
+    <p>Find section of</p><img class="lozad" id="loadingimg" data-src="assets/images/loading_img.png"
+      data-srcset="assets/images/loading_img.png 1000w, assets/images/loading_img.png 2000w" alt="">
+    <h2 id="typewriter"></h2>
+  </div>
+  <div class="loader-img-container">
+    <img class="lozad image_visible" id="loadingimg" data-src="assets/images/loading_img.png"
+      data-srcset="assets/images/loading_img.png 1000w, assets/images/loading_img.png 2000w" alt=""></div>
+  <script src="assets/vendor/js/jquery.js"></script>
+  <script src="assets/vendor/js/lozad.min.js"></script>
+  <script src="assets/vendor/js/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/js/mousewhel.js"></script>
+  <script src="assets/vendor/js/BigPicture.js"></script>
+  <script src="js/main-min.js"></script>
+  <script>; $(".where-to-buy").css("top", $(".header-box").outerHeight());</script>
+  <script>
+    function moderntrade(selectcity, commerce) {
+      let filter = selectcity.value
+      console.log(filter)
+      $('.' + commerce + ' .company-card').show('slow');
+      if (filter != 0) {
+        $('.' + commerce).find(".card-title:not(:contains(" + filter + "))").parent().hide('slow')
+      }
+    }
+  </script>
+</body>
+
+</html>

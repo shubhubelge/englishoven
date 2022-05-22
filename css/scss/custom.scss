@@ -1,0 +1,567 @@
+$colorActive: #eb7203;
+$imagebg: #171717;
+$base: 0.3rem;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+.font-Barlow {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.font-Unica {
+  font-family: "Unica One", cursive;
+}
+.font-CastroScript {
+  font-family: "CastroScript_PERSONAL_USE_ONLY";
+}
+@font-face {
+  font-family: "CastroScript_PERSONAL_USE_ONLY";
+  src: url("../../assets/fonts/CastroScript_PERSONAL_USE_ONLY.eot");
+  src: local("☺"),
+    url("../../assets/fonts/CastroScript_PERSONAL_USE_ONLY.woff ")
+      format("woff"),
+    url("../../assets/fonts/CastroScript_PERSONAL_USE_ONLY.ttf ")
+      format("truetype"),
+    url("../../assets/fonts/CastroScript_PERSONAL_USE_ONLY.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@import "animation";
+.loader-img-container {
+  background-image: url(../../assets/images/bg.jpg);
+  // background-color: #222222;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px #78201b38;
+  height: 100%;
+  background-color: #78201be3;
+  // background-color: #781f1b;
+  position: fixed;
+  z-index: 24;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+.show-page-loader {
+  width: 100%;
+  display: flex;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+}
+.show-page-loader-fast {
+  width: 100%;
+  display: flex;
+  animation-name: slideInLeft;
+  animation-duration: 0s;
+}
+.hide-page-loader {
+  -webkit-animation-name: slideOutRight;
+  animation-name: slideOutRight;
+  animation-duration: 1s;
+}
+.hide-loader-page-loaded {
+  display: none;
+}
+.image_visible_animate {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  animation-duration: 1s;
+}
+.init-loader {
+  height: 100%;
+  width: 100%;
+  background-color: #781f1b;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 64px;
+  transition: 1s;
+  display: none;
+}
+.init-loader p {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Barlow Condensed";
+  text-align: center;
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  animation-duration: 1s;
+  min-height: 48px;
+}
+.init-loader h2 {
+  min-height: 100px;
+  font-size: 64px;
+  min-height: 64px;
+  margin-top: 24px;
+  line-height: 84px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "CastroScript_PERSONAL_USE_ONLY";
+  text-align: center;
+  text-transform: capitalize;
+}
+.init-loader img {
+  // width: 200px;
+  display: block;
+  margin: 0 auto;
+  min-height: 150px;
+  // max-height: 200px;
+  visibility: hidden;
+  animation-name: zoomIn;
+  -webkit-animation-name: zoomIn;
+  animation-duration: 2s;
+}
+.page-link-loader {
+  display: none;
+}
+.opacity-preloader {
+  background-color: #78201be3;
+  transition: 3s;
+}
+.loader-img-container img {
+  display: block;
+}
+.padding_24 {
+  padding: 18px;
+}
+.header-box {
+  z-index: 10;
+  position: absolute;
+}
+.other_site_container {
+  background-color: #000;
+  font-size: 14px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: right;
+  padding: 5px 28px;
+  z-index: 1;
+  .other_site_link {
+    font-size: 14px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Unica One";
+    margin: 5px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: $colorActive;
+      transition: 0.5s;
+    }
+  }
+}
+.header-box .brand-log a {
+  text-decoration: none;
+  padding-right: 16px;
+}
+.header-box .menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+.header-box .brand-log img {
+  width: 98px;
+}
+.out-story {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ccc;
+  position: fixed;
+  left: 0;
+  top: 0;
+  .story-middel img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  .info {
+    padding: 24px;
+    text-align: center;
+    .story-nav {
+      margin: 24px 0;
+      text-align: center;
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+      background-color: transparent;
+      color: red;
+    }
+    .nav-pills .nav-link {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 4px;
+      text-transform: uppercase;
+    }
+    .story-containt {
+      height: 75vh;
+      align-items: center;
+      h3 {
+        text-transform: uppercase;
+      }
+      p {
+        padding: 8px 0;
+      }
+    }
+  }
+}
+.social-icons {
+  margin-right: 28px;
+  height: 24%;
+  .tel-number {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Unica One";
+    margin-right: 8px;
+  }
+}
+.menu-social-icon {
+  width: 32px;
+  display: flex;
+  text-align: center;
+  padding: 8px;
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  &:hover {
+    background-color: $colorActive;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+  }
+}
+.recipes-page {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.maga-menu-full {
+  background-image: url("../../assets/images/bg.jpg");
+  background-color: #222222;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: all 1s;
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  display: block;
+  overflow: hidden;
+}
+.overlay-content {
+  height: 100vh;
+}
+.overlay-content .link-container {
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+}
+.overlay-content .footer-linkes {
+  height: 20%;
+}
+.link-container .link-item {
+  padding: 0 24px;
+}
+.link-container .link-item a {
+  text-decoration: none;
+  color: #fff;
+}
+.link-container .link-item a:hover {
+  color: #eb7203;
+  transition: 0.5s;
+}
+.link-container .link-item .header {
+  font-size: 16px;
+  font-weight: 250;
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+}
+.link-container .link-item .title {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+}
+.other-link .flex-item a {
+  text-decoration: none;
+  color: #fff;
+}
+.other-link .flex-item a:hover {
+  color: #eb7203;
+  transition: 0.5s;
+}
+.drop-btn-container-back {
+  width: 34px;
+  height: 54px;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  border: 2px solid #000;
+  overflow: hidden;
+  .v-line {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    .line {
+      border-right: 2px solid #000;
+      width: 50%;
+      height: 10px;
+      margin-left: 1px;
+    }
+  }
+  .down-chevron-animate {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+    .chevron {
+      color: red;
+      position: absolute;
+      width: 8px;
+      height: 3px;
+      opacity: 0;
+      animation: move-chevron 3s ease-out infinite;
+    }
+    .chevron:first-child {
+      animation: move-chevron 3s ease-out 1s infinite;
+    }
+    .chevron:nth-child(2) {
+      animation: move-chevron 3s ease-out 2s infinite;
+    }
+    .chevron:before,
+    .chevron:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 50%;
+      background: #000;
+    }
+    .chevron:before {
+      left: 0;
+      transform: skewY(45deg);
+    }
+    .chevron:after {
+      right: 0;
+      width: 50%;
+      transform: skewY(-45deg);
+    }
+    @keyframes move-chevron {
+      25% {
+        opacity: 1;
+      }
+      33.3% {
+        opacity: 1;
+        transform: translateY($base * 2);
+      }
+      66.6% {
+        opacity: 0.5;
+        transform: translateY($base * 3);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY($base * 4.5) scale(0.5);
+      }
+    }
+  }
+}
+.drop-btn-container-white {
+  width: 34px;
+  height: 54px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  .v-line {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    .line {
+      border-right: 2px solid #fff;
+      width: 50%;
+      height: 10px;
+      margin-left: 1px;
+    }
+  }
+  .down-chevron-animate {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+    .chevron {
+      color: red;
+      position: absolute;
+      width: 8px;
+      height: 3px;
+      opacity: 0;
+      animation: move-chevron 3s ease-out infinite;
+    }
+    .chevron:first-child {
+      animation: move-chevron 3s ease-out 1s infinite;
+    }
+    .chevron:nth-child(2) {
+      animation: move-chevron 3s ease-out 2s infinite;
+    }
+    .chevron:before,
+    .chevron:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 50%;
+      background: #fff;
+    }
+    .chevron:before {
+      left: 0;
+      transform: skewY(45deg);
+    }
+    .chevron:after {
+      right: 0;
+      width: 50%;
+      transform: skewY(-45deg);
+    }
+    @keyframes move-chevron {
+      25% {
+        opacity: 1;
+      }
+      33.3% {
+        opacity: 1;
+        transform: translateY($base * 2);
+      }
+      66.6% {
+        opacity: 0.5;
+        transform: translateY($base * 3);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY($base * 4.5) scale(0.5);
+      }
+    }
+  }
+}
+.image-shadow-bottom {
+  position: relative;
+}
+.image-shadow-bottom::after {
+  filter: drop-shadow(0 10px 42px #000);
+  content: " ";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background-color: #000;
+  display: block;
+  width: 20px;
+  height: 4px;
+  border-radius: 100%;
+  top: auto;
+  right: 0;
+  bottom: 12px;
+  left: 50%;
+  z-index: -2;
+  box-shadow: 0 0 26px 36px rgba(0, 0, 0, 1);
+  transform: scaleY(0.4) translate(-50%, 0);
+}
+.active-filter {
+  color: #eb7203;
+  border-bottom: 1px solid #eb7203 !important;
+  border-radius: 0;
+}
+.opacity-zero-loader {
+  opacity: 0;
+  transition: 1;
+}
+.display-small {
+  display: none;
+}
+.display-big {
+  display: block !important;
+}
+.display-big-flex {
+  display: flex !important;
+}
+.display-big-web {
+  display: -webkit-box;
+}
+.border-bottom-small {
+  border-bottom: 1px solid rgb(112, 112, 112);
+}
+.newsListWrapper .container {
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+.abtcapone {
+  display: block;
+}
+.abtcaptwo {
+  display: none;
+}
+.readmore-btn {
+  font-size: 14px;
+  font-family: "Unica One";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  margin: 0 auto;
+  &:hover {
+    color: $colorActive;
+  }
+}
+.height-80-new {
+  height: 80vh !important;
+}
+@import "homesilder";
+@import "breadtalk";
+@import "about";
+@import "products";
+@import "recipepage";
+@import "ourrecipes";
+@import "story";
+@import "social";
+@import "manufactu";
+@import "get-in";
+@import "career";
+@import "disclaimer";
+@import "where-to-buy";
+@import "media";

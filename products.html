@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="" name="discription">
+  <meta content="" name="keywords">
+  <link href="assets/images//favicon.png" rel="icon">
+  <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/vendor/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/vendor/css/owl.theme.default.min.css">
+  <!-- <link rel="stylesheet" href="assets/vendor/css/prism.css"> -->
+  <!-- <link rel="stylesheet" href="assets/vendor/css/style.css"> -->
+  <link rel="stylesheet" href="css/scss/custom.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.ez-plus.css">
+
+
+  <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/gh/igorlino/snippet-helper@1.0.1/src/snippet-helper.js"></script>
+    <link type="text/css" rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/igorlino/elevatezoom-plus@1.2.1/demo/css/prism.css"/>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/gh/igorlino/elevatezoom-plus@1.2.1/demo/js/prism.js"></script>
+
+    
+  <link rel="stylesheet" href="css/scroll-theam.css">
+
+  <title>English Oven</title>
+</head>
+
+<body class="main-contaner">
+  <div class="sub-container">
+    <header class="header-box d-flex">
+      <div class="w-100">
+        <div class="other_site_container display-small"><a class="other_site_link" href="#!">Visit Corporate website
+          </a><span class="mx-2">|</span> <a class="other_site_link" href="#!">Visit cremica website</a></div>
+        <div class="d-flex align-items-center padding_24 small-height-60">
+          <div class="brand-log"><a data-async href="index.html"><img class="lozad" data-src="assets/images/logo.png"
+                alt=""></a></div>
+          <div class="home-icon"><a data-async href="index.html"><img class="lozad"
+                data-src="assets/images/home-icon.png" alt=""></a></div>
+          <div class="menu"><a onclick="toggleNav()"><button class="menu toogle-icon"><svg viewBox="0 0 64 48">
+                  <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                  <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                  <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                </svg></button><span class="text-menu">MENU</span></a></div>
+          <div class="video-icon" id="video-container"><a href="#"><img class="lozad"
+                data-src="assets/images/icons/tv.png" alt="" class="youtube" ytSrc="2giJeVLouOM"></a></div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <section>
+    <div class="products-container">
+      <div class="row g-0">
+        <div class="col-4 product-l-bg product-cat-hide">
+          <div class="h-100">
+            <div class="page-info justify-content-center align-items-center h-100">
+              <div class="text-center">
+                <h3 class="our-text">OUR</h3>
+                <h3 class="title">Products</h3>
+                <p class="subtitle">Be bread-ready for <br>every mood.</p>
+                <div class="img-container flex-column product-img-container display-big"><img
+                    data-src="assets/images/section_two_one.png" alt="" class="section_two_one lozad"><img
+                    data-src="assets/images/section_two_two.png" alt="" class="section_two_two lozad"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8 h-100 prod-second"><a href="index.html" data-async
+            class="close-btn position-absolute display-big-flex"><img src="assets/images/close.png" alt=""></a>
+          <div class="place-holder-img h-100 align-items-center justify-content-center ">
+            <div class="overflow-hidden h-100">
+              <!-- <h2 class="title">Fresh</h2>
+              <p>Breads farm around the world, <br>that you love and live to eat</p>
+              <div class="text">Mrs bector bring you bread varieties from around the world, which you love and live to
+                eat. <br class="display-big">English Over's delicious bakes are made from Mrs Bector's Original recipes which contain
+                high-quality<br class="display-big">Tarm-fresh ingredients and no added colours or flavours.<br class="display-big">Explore a world of bakery so
+                good that you will lose yourself in each bite. </div><button type="button"
+                class="btn view-products">VIEW ALL PRODUCTS</button> -->
+                <div class="owl-carousel owl-theme product-category" id="productOwl">
+                  <div class="item">
+                    <div class="pro-item">
+                      <img src="assets/images/pro-cat-img.png" alt="" class="pro-img">
+                      <h2 class="pro-title">FRESH</h2>
+                      <p class="content">Breads that you love and live to eat</p>
+                      <div class="pro-text">Explore a world of bakery so good that you will lose yourself in each bite. </div>
+                      <button class="btn pro-btn ">View all product</button>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="pro-item">
+                      <img src="assets/images/pro-cat-img.png" alt="" class="pro-img">
+                      <h2 class="pro-title">Frozen</h2>
+                      <p class="content">Breads that you love and live to eat</p>
+                      <div class="pro-text">Explore a world of bakery so good that you will lose yourself in each bite. </div>
+                      <button class="btn pro-btn">View all product</button>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="pro-item">
+                      <img src="assets/images/pro-cat-img.png" alt="" class="pro-img">
+                      <h2 class="pro-title">other</h2>
+                      <p class="content">Breads that you love and live to eat</p>
+                      <div class="pro-text">Explore a world of bakery so good that you will lose yourself in each bite. </div>
+                      <button class="btn pro-btn">View all product</button>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="pro-item">
+                      <img src="assets/images/pro-cat-img.png" alt="" class="pro-img">
+                      <h2 class="pro-title">FRESH</h2>
+                      <p class="content">Breads that you love and live to eat</p>
+                      <div class="pro-text">Explore a world of bakery so good that you will lose yourself in each bite. </div>
+                      <button class="btn pro-btn">View all product</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row g-0 h-100 product-container-gallery">
+            <div class="col-4 product-acc">
+              <div class="accordion accordion-flush product-list" id="productList">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-gourmet"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseZero" aria-expanded="false"
+                      aria-controls="flush-collapseZero">Gourmet Breads </button></h2>
+                  <div id="flush-collapseZero" class="accordion-collapse collapse" aria-labelledby="flush-gourmet"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-range"><button
+                      class="accordion-button px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                      aria-controls="flush-collapseOne">100% Range </button></h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-range"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/recipies-tow.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-Brown-Breads"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                      aria-controls="flush-collapseTwo">Brown Breads </button></h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-Brown-Breads"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-multigrain"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                      aria-controls="flush-collapseThree">Multigrain Bread </button></h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-multigrain"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-milk"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                      aria-controls="flush-collapseFour">Milk Bread </button></h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-milk"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-garlic"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapsegarlic" aria-expanded="false"
+                      aria-controls="flush-collapsegarlic">Garlic Bread </button></h2>
+                  <div id="flush-collapsegarlic" class="accordion-collapse collapse" aria-labelledby="flush-garlic"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-white"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapsewhite" aria-expanded="false"
+                      aria-controls="flush-collapsewhite">White Breads </button></h2>
+                  <div id="flush-collapsewhite" class="accordion-collapse collapse" aria-labelledby="flush-white"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-burger"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseburger" aria-expanded="false"
+                      aria-controls="flush-collapseburger">Burger Bun </button></h2>
+                  <div id="flush-collapseburger" class="accordion-collapse collapse" aria-labelledby="flush-burger"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-pizza"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapsepizza" aria-expanded="false"
+                      aria-controls="flush-collapsepizza">Pizza Base </button></h2>
+                  <div id="flush-collapsepizza" class="accordion-collapse collapse" aria-labelledby="flush-pizza"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-indian"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseindian" aria-expanded="false"
+                      aria-controls="flush-collapseindian">Indian Bakery </button></h2>
+                  <div id="flush-collapseindian" class="accordion-collapse collapse" aria-labelledby="flush-indian"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-sweet"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapsesweet" aria-expanded="false"
+                      aria-controls="flush-collapsesweet">Sweet Breads </button></h2>
+                  <div id="flush-collapsesweet" class="accordion-collapse collapse" aria-labelledby="flush-sweet"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-centre"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapsecentre" aria-expanded="false"
+                      aria-controls="flush-collapsecentre">Centre Filled Buns </button></h2>
+                  <div id="flush-collapsecentre" class="accordion-collapse collapse" aria-labelledby="flush-centre"
+                    data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-institutional"><button
+                      class="accordion-button collapsed px-0 acc-button-title accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapseinstitutional" aria-expanded="false"
+                      aria-controls="flush-collapseinstitutional">Institutional Breads </button></h2>
+                  <div id="flush-collapseinstitutional" class="accordion-collapse collapse"
+                    aria-labelledby="flush-institutional" data-bs-parent="#productList">
+                    <div class="accordion-body px-0 pt-0"><button type="button" id="primary1" data-active="primary1"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad"></div>
+                        <div class="col-9 product-name">100% Whole Wheat Bread</div>
+                      </button><button type="button" data-active="100AttaBread"
+                        class="btn d-flex w-100 align-items-center accordion-btn product-option active">
+                        <div class="col-3 px-2"><img data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""
+                            class="img-fluid lozad">s </div>
+                        <div class="col-9 product-name">100% Atta Bread</div>
+                      </button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 info"><a onclick="hideSection()" class="display-small product-back"><img
+                  src="assets/images/our-recipes/arrow-prev.png" alt=""></a>
+              <div class="tab-content products-tab">
+                <div class="display-big">
+                  <ul class="nav nav-pills pro-nav d-flex justify-content-center" id="products-tab" role="tablist">
+                    <li class="nav-item" role="presentation"><button class="nav-link active" id="products-overview-tab"
+                        data-bs-toggle="pill" data-bs-target="#products-overview" type="button" role="tab"
+                        aria-controls="products-overview" aria-selected="true">overview</button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="products-nutritional-tab"
+                        data-bs-toggle="pill" data-bs-target="#products-nutritional" type="button" role="tab"
+                        aria-controls="products-nutritional" aria-selected="false">Nutritional facts</button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="products-ingredients-tab"
+                        data-bs-toggle="pill" data-bs-target="#products-ingredients" type="button" role="tab"
+                        aria-controls="products-ingredients" aria-selected="false">Ingredients</button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="products-recipes-tab"
+                        data-bs-toggle="pill" data-bs-target="#products-recipes" type="button" role="tab"
+                        aria-controls="products-recipes" aria-selected="false">Recipes</button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link" id="products-other-products-tab"
+                        data-bs-toggle="pill" data-bs-target="#products-other-products" type="button" role="tab"
+                        aria-controls="products-other-products" aria-selected="false">other products</button></li>
+                  </ul>
+                </div>
+                <div class="tab-content product-info-tab" id="product-info-content">
+                  <div class="tab-pane fade show active" id="products-overview" role="tabpanel"
+                    aria-labelledby="products-overview-tab">
+                    <div class="flex-column justify-content-center dymaic-container">
+                      <div class="dynamicOwl">
+                      <div class="owl-carousel owl-theme dynProImgsCarousel ">
+                        <!-- <img class="zoom-img productImg" id="zoom_001"
+                             src="assets/images/products/Whole_Wheat_Bread.png"
+                             data-zoom-image="assets/images/products/Whole_Wheat_Bread.png"
+                             /> -->
+                        <div class="item">
+                          <div class="easyzoom easyzoom--overlay">
+                            <a class="zoom-image-link" href="assets/images/products/Whole_Wheat_Bread.png">
+                              <img data-src="assets/images/products/Whole_Wheat_Bread.png" class="productImg owl-lazy" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="easyzoom easyzoom--overlay">
+                            <a class="zoom-image-link" href="assets/images/products/i.png">
+                              <img data-src="assets/images/products/i.png" class="productImg owl-lazy" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                          <!-- <div class="item">
+                            <div class="easyzoom easyzoom--overlay">
+                              <a class="zoom-image-link" href="assets/images/products/Whole_Wheat_Bread.png">
+                                <img data-src="assets/images/products/Whole_Wheat_Bread.png" class="productImg owl-lazy" alt="" />
+                              </a>
+                            </div>
+                            </div> -->
+                        
+                      </div>
+                    </div>
+                      
+                        <div class="pro-price-container d-flex">
+                          <div class="price d-flex">
+                            <select class="form-select avai-gra me-2" id="location" aria-label="Available locations">
+                              <option selected>AVAILABLE LOCATIONS</option>
+                              <option value="Assam">Assam</option>
+                              <option value="Bihar">Bihar</option>
+                              <option value="Chandigarh">Chandigarh</option>
+                              <option value="Chhattisgarh">Chhattisgarh</option>
+                              <option value="Delhi">Delhi</option>
+                              <option value="Gujarat">Gujarat</option>
+                              <option value="Haryana">Haryana</option>
+                              <option value="Himachal_Pradesh">Himachal Pradesh</option>
+                              <option value="Jammu_and_Kashmir">Jammu and Kashmir</option>
+                              <option value="Karnataka">Karnataka</option>
+                              <option value="Madhya Pradesh">Madhya Pradesh</option>
+                              <option value="Maharashtra">Maharashtra</option>
+                              <option value="Orissa">Orissa</option>
+                              <option value="Punjab">Punjab</option>
+                              <option value="Rajasthan">Rajasthan</option>
+                              <option value="Tamil_Nadu">Tamil Nadu</option>
+                              <option value="Telangana">Telangana</option>
+                              <option value="Uttar_Pradesh">Uttar Pradesh</option>
+                              <option value="Uttarakhand">Uttarakhand</option>
+                              <option value="West_Bengal">West Bengal</option>
+                            </select>
+                         
+                            <select class="form-select avai-gra" id="grammageid" aria-label="AVAILABLE GRAMMAGE">
+                              <option selected>AVAILABLE GRAMMAGE </option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="location ">
+                            <div class="rs">₹<span class="input-price">35</span></div>
+                          </div>
+                        </div>
+                      <h2 class="productName">100% Whole Wheat Bread</h2>
+                      <div class="text-center healthy"><img class="lozad d-none" data-src="assets/images/hart.png"
+                          alt="">Healthy</div>
+                      <p class="productDisp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet metus
+                        sit amet massa semper commodo eu quis mi. In eget urna ultrices, fringilla urna a, luctus nunc.
+                        Fusce quis rhoncus tortor. Praesent sodales tristique venenatis. Fusce non tempus diam, non
+                        vehicula elit. Sed rutrum, libero sit amet feugiat varius, est ante accumsan diam, sed rhoncus
+                        orci lorem a nulla. Donec posuere diam eget condimentum blandit. Curabitur nisl lorem, tempus et
+                        magna at, fermentum rhoncus nisl. </p>
+                    </div>
+                  </div>
+                  <div class="nute-ingra display-small">
+                    <nav>
+                      <div class="nav nav-tabs nute-ingra-nav" id="nav-tab" role="tablist"><button
+                          class="nav-link active" id="nav-nute-tab" data-bs-toggle="tab" data-bs-target="#nav-nute"
+                          type="button" role="tab" aria-controls="nav-nute" aria-selected="true">Nutritional
+                          facts</button><button class="nav-link" id="nav-ingra-tab" data-bs-toggle="tab"
+                          data-bs-target="#nav-ingra" type="button" role="tab" aria-controls="nav-ingra"
+                          aria-selected="false">Ingredients </button></div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="nav-nute" role="tabpanel"
+                        aria-labelledby="nav-nute-tab">
+                        <div class="nute-ingra-tab-content">
+                          <div class="nutritional">
+                            <div class="title-box">
+                              <div class="title ">Nutritional Information</div>
+                              <div class="subtitle">Per 100g of Product (Approx.)</div>
+                            </div>
+                            <ul>
+                              <li>
+                                <div>Energy</div>
+                                <div>XXX.xx kcal</div>
+                              </li>
+                              <li>
+                                <div>Carbohydrates</div>
+                                <div>XX.XX g</div>
+                              </li>
+                              <li>
+                                <div>of which Sugars</div>
+                                <div>X.XX g</div>
+                              </li>
+                              <li>
+                                <div>Fat</div>
+                                <div>X.X g</div>
+                              </li>
+                              <li>
+                                <div>Saturated Fat</div>
+                                <div>X.XX g</div>
+                              </li>
+                              <li>
+                                <div>Trans Fat</div>
+                                <div>0 g</div>
+                              </li>
+                              <li>
+                                <div>Protein</div>
+                                <div>X.XX g</div>
+                              </li>
+                              <li>
+                                <div>Dietary Fiber</div>
+                                <div>X.XX g</div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="nav-ingra" role="tabpanel" aria-labelledby="nav-ingra-tab">
+                        <div class="nute-ingra-tab-content">
+                          <h4>title goes here</h4>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nisi eius nulla ex quos,
+                            sit quis voluptatem eaque excepturi reiciendis eos deserunt fuga natus voluptatum recusandae
+                            consequatur? Minima veniam pariatur corporis doloremque consequatur omnis officiis
+                            reprehenderit rerum voluptas maiores, error maxime odio unde eius fugiat magni veritatis
+                            ipsum! Sunt, cum!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade " id="products-nutritional" role="tabpanel"
+                    aria-labelledby="products-nutritional-tab">
+                  <div class="d-flex align-items-center justify-content-center ">
+                    <div class="nutritional">
+                      <div class="title-box">
+                        <div class="title ">Nutritional Information</div>
+                        <div class="subtitle">Per 100g of Product (Approx.)</div>
+                      </div>
+                      <ul>
+                        <li>
+                          <div>Energy</div>
+                          <div>XXX.xx kcal</div>
+                        </li>
+                        <li>
+                          <div>Carbohydrates</div>
+                          <div>XX.XX g</div>
+                        </li>
+                        <li>
+                          <div>of which Sugars</div>
+                          <div>X.XX g</div>
+                        </li>
+                        <li>
+                          <div>Fat</div>
+                          <div>X.X g</div>
+                        </li>
+                        <li>
+                          <div>Saturated Fat</div>
+                          <div>X.XX g</div>
+                        </li>
+                        <li>
+                          <div>Trans Fat</div>
+                          <div>0 g</div>
+                        </li>
+                        <li>
+                          <div>Protein</div>
+                          <div>X.XX g</div>
+                        </li>
+                        <li>
+                          <div>Dietary Fiber</div>
+                          <div>X.XX g</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="tab-pane fade" id="products-ingredients" role="tabpanel"
+                    aria-labelledby="products-ingredients-tab"></div>
+                  <div class="tab-pane fade dis-on-mobile prod-recipes height-80vh" id="products-recipes"
+                    role="tabpanel" aria-labelledby="products-recipes-tab">
+                    <div class="recipies-tab-title display-small">Recipes</div>
+                    <div class="height-80-container">
+                      <div class="swiper-container product-recipes-containt our-recipes-swiper height-80-new">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide filtered-div" data-lunch="lunch">
+                            <div class="indiRecipe ">
+                              <div class="our-rec-img-container">
+                                <div class="time"><img src="assets/images/timer.png" alt=""><span>30 Mins</span></div>
+                                <img class="poster-img swiper-lazy" src="assets/images/our-recipes/recipe-1.jpg">
+                              </div>
+                              <h4>Grilled Mexican Spiced Paneer</h4>
+                              <p class="sml"><span>Lunch</span>| 564 Cal</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide filtered-div" data-dinner="dinner">
+                            <div class="indiRecipe">
+                              <div class="our-rec-img-container">
+                                <div class="time"><img src="assets/images/timer.png" alt=""><span class="typeoffood">30
+                                    Mins</span></div><img class="poster-img swiper-lazy"
+                                  src="assets/images/our-recipes/recipe-2.jpg">
+                              </div>
+                              <h4>Crumb Fried Chicken</h4>
+                              <p class="sml"><span>Dinner</span>| 256 Cal</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide filtered-div" data-breakfast="breakfast">
+                            <div class="indiRecipe">
+                              <div class="our-rec-img-container">
+                                <div class="time"><img src="assets/images/timer.png" alt=""><span class="typeoffood">30
+                                    Mins</span></div><img class="poster-img swiper-lazy"
+                                  src="assets/images/our-recipes/recipe-3.jpg">
+                              </div>
+                              <h4>Crumb Fried Chicken</h4>
+                              <p class="sml"><span>breakfast</span>| 256 Cal</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide filtered-div" data-lunch="lunch">
+                            <div class="indiRecipe">
+                              <div class="our-rec-img-container">
+                                <div class="time"><img src="assets/images/timer.png" alt=""><span class="typeoffood">30
+                                    Mins</span></div><img class="poster-img swiper-lazy"
+                                  src="assets/images/our-recipes/recipe-4.jpg">
+                              </div>
+                              <h4>Grilled Mexican Spiced Paneer</h4>
+                              <p class="sml"><span>Lunch</span>| 564 Cal</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide filtered-div" data-lunch="lunch">
+                            <div class="indiRecipe">
+                              <div class="our-rec-img-container">
+                                <div class="time"><img src="assets/images/timer.png" alt=""><span class="typeoffood">30
+                                    Mins</span></div><img class="poster-img swiper-lazy"
+                                  src="assets/images/our-recipes/recipe-5.jpg">
+                              </div>
+                              <h4>Grilled Mexican Spiced Paneer</h4>
+                              <p class="sml"><span>Lunch</span>| 564 Cal</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide filtered-div" data-lunch="lunch">
+                            <div class="indiRecipe">
+                              <div class="our-rec-img-container">
+                                <div class="time"><img src="assets/images/timer.png" alt=""><span class="typeoffood">30
+                                    Mins</span></div><img class="poster-img swiper-lazy"
+                                  src="assets/images/our-recipes/recipe-6.jpg">
+                              </div>
+                              <h4>Grilled Mexican Spiced Paneer</h4>
+                              <p class="sml"><span>Lunch</span>| 564 Cal</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide filtered-div" data-dinner="dinner">
+                            <div class="indiRecipe">
+                              <div class="our-rec-img-container">
+                                <div class="time"><img src="assets/images/timer.png" alt=""><span class="typeoffood">30
+                                    Mins</span></div><img class="poster-img swiper-lazy"
+                                  src="assets/images/our-recipes/recipe-2.jpg">
+                              </div>
+                              <h4>Grilled Mexican Spiced Paneer</h4>
+                              <p class="sml"><span>dinner</span>| 564 Cal</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide filtered-div" data-breakfast="breakfast">
+                            <div class="indiRecipe ">
+                              <div class="our-rec-img-container">
+                                <div class="time"><img src="assets/images/timer.png" alt=""><span class="typeoffood">30
+                                    Mins</span></div><img class="poster-img swiper-lazy"
+                                  src="assets/images/our-recipes/recipe-1.jpg">
+                              </div>
+                              <h4>Grilled Mexican Spiced Paneer</h4>
+                              <p class="sml"><span>breakfast</span>| 564 Cal</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade dis-on-mobile " id="products-other-products" role="tabpanel"
+                    aria-labelledby="products-other-products-tab">
+                    <div class="recipies-tab-title display-small other-pro-title">other products</div>
+                    <div class="other-pro-card">
+                      <div class="row g-0">
+                        <div class="col-2 prod-img-cont"><img class="pro-card-img"
+                            src="assets/images/products/Whole_Wheat_Bread.png" alt=""></div>
+                        <div class="col-10 col-md-7 content">
+                          <h2>product name</h2>
+                          <p class="display-big-web">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                            maxime assumenda minus fugiat incidunt consectetur inventore, vitae fugit deserunt dicta
+                            quibusdam quaerat repellat quae nesciunt, unde eum cumque accusantium odit?</p>
+                          <div class="prod-link-cont display-small"><a class="btn pro-card-link px-0" href="#"
+                              role="button">view product</a></div>
+                        </div>
+                        <div class="col-3 prod-link-cont display-big-flex"><a class="btn pro-card-link" href="#"
+                            role="button">view product</a></div>
+                      </div>
+                    </div>
+                    <div class="other-pro-card">
+                      <div class="row g-0">
+                        <div class="col-2 prod-img-cont"><img class="pro-card-img"
+                            src="assets/images/products/Whole_Wheat_Bread.png" alt=""></div>
+                        <div class="col-10 col-md-7 content">
+                          <h2>product name</h2>
+                          <p class="display-big-web">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                            maxime assumenda minus fugiat incidunt consectetur inventore, vitae fugit deserunt dicta
+                            quibusdam quaerat repellat quae nesciunt, unde eum cumque accusantium odit?</p>
+                          <div class="prod-link-cont display-small"><a class="btn pro-card-link px-0" href="#"
+                              role="button">view product</a></div>
+                        </div>
+                        <div class="col-3 prod-link-cont display-big-flex"><a class="btn pro-card-link" href="#"
+                            role="button">view product</a></div>
+                      </div>
+                    </div>
+                    <div class="other-pro-card">
+                      <div class="row g-0">
+                        <div class="col-2 prod-img-cont"><img class="pro-card-img lozad"
+                            data-src="assets/images/products/Whole_Wheat_Bread.png" alt=""></div>
+                        <div class="col-10 col-md-7 content">
+                          <h2>product name</h2>
+                          <p class="display-big-web">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                            maxime assumenda minus fugiat incidunt consectetur inventore, vitae fugit deserunt dicta
+                            quibusdam quaerat repellat quae nesciunt, unde eum cumque accusantium odit?</p>
+                          <div class="prod-link-cont display-small"><a class="btn pro-card-link px-0" href="#"
+                              role="button">view product</a></div>
+                        </div>
+                        <div class="col-3 prod-link-cont display-big-flex"><a class="btn pro-card-link" href="#"
+                            role="button">view product</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="newsListWrapper display-small product-cat-hide">
+        <div class="container ">
+          <div class="d-flex justify-content-center align-items-center flex-wrap other-link">
+            <div class="flex-item"><a href="javascript:void()">Manufacturing Unit </a></div>
+            <div class="flex-item"><a href="javascript:void()">Where to Buy </a></div>
+            <div class="flex-item"><a href="javascript:void()">Customer Support </a></div>
+            <div class="flex-item"><a href="javascript:void()">Contact Us </a></div>
+            <div class="flex-item"><a href="javascript:void()">Careers </a></div>
+            <div class="flex-item"><a href="javascript:void()">Privacy Policy </a></div>
+            <div class="flex-item"><a href="javascript:void()">HR policy </a></div>
+            <div class="flex-item"><a href="javascript:void()">Disclaimer </a></div>
+            <div class="flex-item"><a href="javascript:void()">Toll Free Number : 1800-102-9163 </a></div>
+          </div>
+          <div class="copyright text-center">&copy;
+            <script>document.write(new Date().getFullYear())</script>English Oven<sup>TM</sup>&nbsp;&nbsp; India. All Rights Reserved<br>  L74899PB1995PLC033417
+          </div>
+          <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+                  src="assets/images/social/linkedin.png" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+                  src="assets/images/social/facebook.png" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+                  src="assets/images/social/youtube.png" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="javascript:void()"><img
+                  src="assets/images/social/insta.png" alt=""></a></div>
+          </div>
+          <img data-src="assets/images/testhappy.png" alt="testhappy" class="lozad mx-auto img-fluid d-block mt-2">
+        </div>
+      </section>
+    </div>
+  </section>
+  <div class="maga-menu-full">
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <div class="d-flex link-container animate__animated ">
+          <div class="link-item"><a data-async href="about.html">
+              <div class="header">OUR </div>
+              <div class="title">STORY</div>
+            </a></div>
+          <div class="link-item"><a data-async href="products.html">
+              <div class="header">OUR </div>
+              <div class="title">PRODUCTS</div>
+            </a></div>
+          <div class="link-item"><a data-async href="recipes.html">
+              <div class="header">OUR </div>
+              <div class="title">RECIPES</div>
+            </a></div>
+          <div class="link-item"><a data-async href="social.html">
+              <div class="header">Social </div>
+              <div class="title">MEDIA</div>
+            </a></div>
+          <div class="link-item"><a data-async href="get-in-touch.html">
+              <div class="header">GET IN</div>
+              <div class="title">TOUCH</div>
+            </a></div>
+        </div>
+        <div class="px-4 footer-linkes text-left">
+          <div class="row g-0">
+            <div class="col-12 col-md-10">
+          <div class="d-flex align-items-center flex-wrap other-link other-link-small">
+            <div class="flex-item"><a data-async href="maunfacturing-unit.html">Manufacturing Unit </a></div>
+            <div class="flex-item"><a href="where-to-buy.html">Where to Buy </a></div>
+            <div class="flex-item"><a href="#!">Customer Support</a></div>
+            <div class="flex-item"><a href="get-in-touch.html">Contact Us </a></div>
+            <div class="flex-item"><a href="careers.html">Careers </a></div>
+            <div class="flex-item"><a href="privacy-policy.html">Privacy Policy </a></div>
+            <div class="flex-item"><a href="hr-policies.html">HR policy </a></div>
+            <div class="flex-item"><a href="disclaimer.html">Disclaimer </a></div>
+            <div class="flex-item"><a href="tel:18001029163">Toll Free Number : 1800-102-9163 </a></div>
+          </div>
+          <div class="copyright copyright-small">&copy;
+            MRS BECTORS FOOD SPECIALITIES LTD.&nbsp;&nbsp;India. All Rights
+            Reserved 
+           <br>  L74899PB1995PLC033417
+          </div>
+          <div class="d-flex footer-social-icon">
+            <div class="flex-item"><a class="menu-social-icon" href="#!"><img
+                  data-src="assets/images/social/linkedin.png" class="lozad" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="https://www.facebook.com/mrsbectorsenglishoven/"><img
+                  data-src="assets/images/social/facebook.png" class="lozad" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="https://www.youtube.com/channel/UCNIOCYvHnsuTkIyxknbT4lw"><img
+                  data-src="assets/images/social/youtube.png" class="lozad" alt=""></a></div>
+            <div class="flex-item"><a class="menu-social-icon" href="https://www.instagram.com/englishoven/"><img data-src="assets/images/social/insta.png"
+                  class="lozad" alt=""></a></div>
+          </div>
+        </div>
+          <div class="col-md-2 col-12 text-center">
+            <img data-src="assets/images/testhappy.png" alt="" class="lozad img-fluid my-3 my-md-0">
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="preloader" class="init-loader">
+    <p>Find section of</p><img class="lozad" id="loadingimg" data-src="assets/images/loading_img.png"
+      data-srcset="assets/images/loading_img.png 1000w, assets/images/loading_img.png 2000w" alt="">
+    <h2 id="typewriter"></h2>
+  </div>
+  <div class="loader-img-container"><img class="lozad image_visible" id="loadingimg" data-src="assets/images/loading_img.png"
+      data-srcset="assets/images/loading_img.png 1000w, assets/images/loading_img.png 2000w" alt=""></div>
+  <script src="assets/vendor/js/jquery.js"></script>
+  <script src="assets/vendor/js/lozad.min.js"></script>
+  <script src="assets/vendor/js/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/js/mousewhel.js"></script>
+  <script src="assets/vendor/js/BigPicture.js"></script>
+  <script src="assets/vendor/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/js/owl.carousel.min.js"></script>
+  <script src="assets/vendor/js/easyzoom.js"></script>
+
+
+  <script src="js/main-min.js"></script>
+  <script src="js/jquery.ez-plus.js"></script>
+  <script src="js/products.js"></script>
+  <script>
+    var $easyzoom = $('.easyzoom').easyZoom();
+    var api = $easyzoom.data('easyZoom');
+
+  </script>
+  <script>
+    $("#zoom_001").ezPlus({
+        // tint: true,
+        lensSize:100,
+        tintColour: 'red',
+        tintOpacity: 0.5,
+        cursor: 'pointer',
+        zoomWindowPosition: 6
+    });
+    // $("#zoom_02b").ezPlus({
+    //     tint: true,
+    //     tintColour: 'black',
+    //     tintOpacity: 0.5,
+    //     zoomWindowPosition: 6
+    // });
+    // $("#zoom_02c").ezPlus({
+    //     tint: true,
+    //     tintColour: 'green',
+    //     tintOpacity: 0.5,
+    //     zoomWindowPosition: 6
+    // });
+    var productSwiper = new Swiper("#productSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 32,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      },
+    });
+    var productOwl = $('#productOwl').owlCarousel({
+    loop: false,
+    margin: 0,
+    nav: false,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      1000: {
+        items: 3,
+      },
+      
+    },
+  });
+
+  $(".pro-btn").on("click", function () {
+    $(".place-holder-img").fadeOut("1000");
+    $(".product-container-gallery").addClass("d-flex");
+    if ($( document ).width()<768) {
+      $(".product-cat-hide").css('display','block')
+    }
+  });
+  </script>
+</body>
+
+</html>
